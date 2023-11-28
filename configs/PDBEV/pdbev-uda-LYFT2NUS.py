@@ -32,7 +32,7 @@ data_config = {
     'input_size': (384, 704),  # 2.2727
     'src_size': (900, 1600),
     # Augmentation
-    'resize': (-0.06, 0.3),
+    'resize': (-0.06, 0.11),
     # 'resize': (-0.00, 0.00),
     'rot': (-25.4, 25.4),
     'flip': True,
