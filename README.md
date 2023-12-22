@@ -7,18 +7,17 @@ A plug-and-play BEV generalization framework that can leverage both unlabeled an
 
 ## Get Started
 
-#### Installation and Data Preparation
 
-###### **step 1. Prepare the environment refer to [BEVDet](https://github.com/HuangJunJie2017/BEVDet).**
+#### **step 1. Prepare the environment refer to [BEVDet](https://github.com/HuangJunJie2017/BEVDet).**
 
-###### **step 2. Prepare PDBEV repo by.**
+#### **step 2. Prepare PDBEV repo by.**
 ```shell script
 git clone https://github.com/EnVision-Research/Generalizable-BEV.git
 cd Generalizable-BEV
 pip install -v -e .
 ```
 
-###### **step 3. Prepare datasets:**
+#### **step 3. Prepare datasets:**
 The preparation of the dataset is actually to generate the corresponding index (pkl files), which can then be used with the dataset that we have created.
 
 nuScenes dataset pkl file generation refers to [Details](https://github.com/HuangJunJie2017/BEVDet)
@@ -29,7 +28,7 @@ Lyft use ./tools/Lyft_converter.py to convert to a uniform format.
 
 The pre-processed pkl of the three data sets can be downloaded directly [here].
 
-###### **step 4. Train for domain generalization:**
+#### **step 4. Train for domain generalization:**
 ```
 bash tools/dist_train.sh  $confige_file$  $Gpus_num$     
 ```
@@ -40,7 +39,7 @@ bash tools/dist_train.sh  ./configs/PDBEV/pdbev-r50-cbgs-LYFT2X-dg.py  8     # L
 bash tools/dist_train.sh  ./configs/PDBEV/pdbev-r50-cbgs-DA2X-dg.py    8     # DeepAccident as source domain, using 8 gpus
 ```
 
-###### **step 5. Train for unspuervised domain adapataion:**
+#### **step 5. Train for unspuervised domain adapataion:**
 ```
 bash tools/dist_train.sh  $confige_file$  c   --checkpoint  $the pretrained models on source domain$
 ```
@@ -51,7 +50,7 @@ bash tools/dist_train.sh  ./configs/PDBEV/pcbev-uda-NUS2LYFT.py  8 --checkpoint 
 # You only need to modify the path of the configuration file of different data set D and the corresponding model M to test the performance of model M on the corresponding data set D. It is worth mentioning that none of our algorithms change the model infrastructure, so they are only used for BEVDepth evaluation.
 ```
 
-###### **step 6. Test at target domain:**
+#### **step 6. Test at target domain:**
 ```
 bash ./tools/dist_test.sh &test dataset config_file&  &model_path&   $Gpus_num$  --eval bbox --out  $output_path$
 ```
