@@ -57,8 +57,6 @@ bash ./tools/dist_test.sh &test dataset config_file&  &model_path&   $Gpus_num$ 
 For example:
 ```
 bash ./tools/dist_test.sh ./configs/bevdet_our/bevdepth-r50-cbgs-pc-lyft.py  ./work_dirs/pdbev-r50-cbgs-NUS2X-dg/epoch_24.pth 8 --eval bbox --out ./work_dirs/bevdepth-r50-cbgs-pc-nus/nus.pkl
-# nuScenes as source domain, tested on LYFT target domain, loading DG pretrain models at 24 epoch
-# You only need to modify the path of the configuration file of different data set D and the corresponding model M to test the performance of model M on the corresponding data set D. It is worth mentioning that none of our algorithms change the model infrastructure, so they are only used for BEVDepth evaluation.
 ```
 
 ## Acknowledgement
