@@ -54,6 +54,7 @@ bash tools/dist_train.sh  ./configs/PDBEV/pcbev-uda-NUS2LYFT.py  8 --checkpoint 
 ###### **step 6. Test at target domain:**
 ```
 bash ./tools/dist_test.sh &test dataset config_file&  &model_path&   $Gpus_num$  --eval bbox --out  $output_path$
+```
 For example:
 ```
 bash ./tools/dist_test.sh ./configs/bevdet_our/bevdepth-r50-cbgs-pc-lyft.py  ./work_dirs/pdbev-r50-cbgs-NUS2X-dg/epoch_24.pth 8 --eval bbox --out ./work_dirs/bevdepth-r50-cbgs-pc-nus/nus.pkl
