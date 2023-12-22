@@ -1,13 +1,8 @@
 # Generalizable-BEV
 <div style="text-align:center;">
-  <img src="/Framework.png" style="width:70%;" />
+  <img src="/Framework.png" style="width:85%;" />
 </div>
 
-The first unsupervised domain adaptation for multi-camera 3D object detection
-
-The first Sim2real attempt for multi-camera 3D object detection without any real world labels.
-
-2D perception and 3D perception bridges were built utilizing Nerf mechanisms.
 
 
 ## Get Started
