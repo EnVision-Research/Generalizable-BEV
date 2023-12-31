@@ -39,7 +39,7 @@ bash tools/dist_train.sh  ./configs/PDBEV/pdbev-r50-cbgs-LYFT2X-dg.py  8     # L
 bash tools/dist_train.sh  ./configs/PDBEV/pdbev-r50-cbgs-DA2X-dg.py    8     # DeepAccident as source domain, using 8 gpus
 ```
 
-#### **step 5. Train for unspuervised domain adapataion:**
+#### **step 5. Train for unsupervised domain adaptation:**
 ```
 bash tools/dist_train.sh  $confige_file$  c   --checkpoint  $the pretrained models on source domain$
 ```
