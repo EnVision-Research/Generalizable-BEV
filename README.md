@@ -63,6 +63,10 @@ bash ./tools/dist_test.sh ./configs/bevdet_our/bevdepth-r50-cbgs-pc-lyft.py  ./w
 
 This project is not possible without multiple great open-sourced code bases. We list some notable examples: [BEVDet](https://github.com/HuangJunJie2017/BEVDet), [DeepAccident](https://github.com/tianqi-wang1996/DeepAccident), [Lyft](https://github.com/lyft/nuscenes-devkit).
 
+## Email
+
+hlu585@connect.hkust-gz.edu.cn
+
 
 ## Citation
 ```
