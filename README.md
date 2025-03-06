@@ -1,4 +1,4 @@
-# Generalizable-BEV
+# Generalizable-BEV [AAAI]
 <div style="text-align:center;">
   <img src="/Framework.png" style="width:95%;" />
 </div>
@@ -70,10 +70,10 @@ hlu585@connect.hkust-gz.edu.cn
 
 ## Citation
 ```
-@InProceedings{PD-BEV,
-    author    = {Hao LU, Yunpeng ZHANG, Qing LIAN, Dalong DU, Ying-Cong CHEN},
+@InProceedings{lu2025PD-BEV,
+    author    = {Hao LU, Yunpeng ZHANG, Guoqing WANG, Qing LIAN, Dalong DU, Ying-Cong CHEN},
     title     = {Towards Generalizable Multi-Camera 3D Object Detection via Perspective Debiasing},
-    booktitle = {arXiv preprint arXiv:2310.11346},
-    year      = {2023},
+    booktitle = {AAAI},
+    year      = {2025},
 }
 ```
