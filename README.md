@@ -1,4 +1,4 @@
-# Generalizable-BEV [AAAI]
+# Generalizable-BEV [AAAI 2025]
 <div style="text-align:center;">
   <img src="/Framework.png" style="width:95%;" />
 </div>
